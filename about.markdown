@@ -4,15 +4,12 @@ title: O mnie
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Cześć! Nazywam się Sidewinder22.  
+Jestem programistą C++/Python.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Właśnie rozpocząłem naukę cyberbezpieczeństwa.  
+Ten blog pomoże mi ją usystematyzować.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Kontakt:
+* mail: <sidewinder22@protonmail.com>
+* twitter: <https://twitter.com/Sidewinder223>
