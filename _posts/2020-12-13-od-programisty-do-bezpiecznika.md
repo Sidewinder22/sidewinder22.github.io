@@ -2,7 +2,7 @@
 layout: post
 title:  "#1 Od programisty do bezpiecznika"
 date:   2020-12-13 01:23:00 +0100
-categories: start cyber
+tags: start dev cyber
 ---
 
 ## Od programisty do bezpiecznika
