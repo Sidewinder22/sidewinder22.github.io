@@ -3,12 +3,9 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-list_title: Posty
+title: Posty
+permalink: /
 ---
-
-<h1>Posty</h1>
-
-<a href="about">about me</a>
 
 {% for post in site.posts %}
   <article>
@@ -18,6 +15,8 @@ list_title: Posty
       </a>
     </h2>
     <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-    <!-- {{ post.content }} -->
+    <br/>
+    {{ post.short_desc }}
   </article>
+  <br>
 {% endfor %}

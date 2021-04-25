@@ -1,11 +1,10 @@
 ---
 layout:     post
-title:      "#1 Od programisty do bezpiecznika"
-date:       2021-01-13 01:23:00 +0100
-tags:       start dev cyber
+date:       2021-04-23 18:30:00 +0100
+tags:       start
 author:     Sidewinder22
-short_desc: "Cześć! Witajcie na moim blogu :)  
-            Nazywam się **Sidewinder22**. Jestem programistą C++/Python."
+title:      "#0 Wpis inaugurujący blog"
+short_desc: "Krótki wpis inaugurujący pisanie bloga"
 ---
 
 Cześć! Witajcie na moim blogu :)  
@@ -20,3 +19,4 @@ Blog ma być głównie nastawiony na cyberbezpieczeństwo, ale pojawią się na 
 tematy związane z programowaniem.
 
 Trzymajcie kciuki!
+
