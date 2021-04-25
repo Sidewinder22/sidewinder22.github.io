@@ -23,15 +23,21 @@ email: sidewinder22@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Od programisty do bezpiecznika - blog techniczny przedstawiający proces 
   nauki cyberbezpieczeństwa z pozycji programisty.  
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" #http://localhost:4000/" #/od_programisty_do_bezpiecznika" # the subpath of your site, e.g. /blog
+url: "" #https://sidewinder22.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: minima 
+#theme: minima 
+theme: jekyll-theme-midnight
+
 plugins:
   - jekyll-feed
+
+urls:
+- text: About
+url: /about/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,4 +59,4 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# github: [metadata]
+github: [metadata]

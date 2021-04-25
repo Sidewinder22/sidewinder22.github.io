@@ -1,11 +1,12 @@
 ---
-layout: post
-title:  "#1 Od programisty do bezpiecznika"
-date:   2020-12-13 01:23:00 +0100
-categories: start cyber
+layout:     post
+title:      "#1 Od programisty do bezpiecznika"
+date:       2021-01-13 01:23:00 +0100
+tags:       start dev cyber
+author:     Sidewinder22
+short_desc: "Cześć! Witajcie na moim blogu :)  
+            Nazywam się **Sidewinder22**. Jestem programistą C++/Python."
 ---
-
-## Od programisty do bezpiecznika
 
 Cześć! Witajcie na moim blogu :)  
 Nazywam się **Sidewinder22**. Jestem programistą C++/Python.
