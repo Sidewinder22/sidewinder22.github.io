@@ -12,6 +12,13 @@ Wszystkie opinie wyrażone na tym blogu są tylko moimi własnymi opiniami (nie 
 Jako programista C++/Python chciałbym wyspecjalizować się w branży cyberbezpieczeństwa.
 Ten blog pomoże mi śledzić postępy nauki i usystematyzować wiedzę.
 
+### Zainteresowania
+
+* Gra na instrumentach klawiszowych.
+* Czytanie książek.
+* Spacery.
+* Cyberbezpieczeństwo.
+
 ### Kontakt
 
 * e-mail: <sidewinder22@protonmail.com>
