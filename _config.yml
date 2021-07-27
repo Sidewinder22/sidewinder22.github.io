@@ -60,3 +60,6 @@ url: /about/
 #   - vendor/ruby/
 
 github: [metadata]
+
+# To see feature posts
+future: true

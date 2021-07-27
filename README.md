@@ -41,6 +41,13 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 bundle update github-pages 
 ```
 
+#### Arch Linux
+```
+bundle-2.7 exec jekyll build 
+bundle-2.7 exec jekyll serve --incremental
+```
+
+#### Normal 
 ```
 bundle exec jekyll serve
 bundle exec jekyll serve --baseurl ""

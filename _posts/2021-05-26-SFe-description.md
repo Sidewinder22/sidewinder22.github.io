@@ -43,6 +43,9 @@ View to po prostu kilka klas reprezentujących interfejs użytkownika.
 
 Controller łączy za pomocą slotów i sygnałów (z biblioteki QT) partie View i Model.
 
+[Link do projektu](https://github.com/Sidewinder22/SideFileEditor)
+
 ![sfe_screenshot](/assets/images/sfe_screenshot.png){: width="700" }
 
-[Link do projektu](https://github.com/Sidewinder22/SideFileEditor)
+Pozdrawiam,
+Sidewinder22
