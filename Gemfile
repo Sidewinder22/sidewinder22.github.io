@@ -19,7 +19,9 @@ group :jekyll_plugins do
   gem "addressable", ">= 2.8.0"
 end
 
-gem 'jekyll-theme-midnight', '~> 0.1.1'
+#gem 'jekyll-theme-midnight', '~> 0.1.1'
+gem 'jekyll-theme-midnight', '~> 0.2.0'
+# gem "minima"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
