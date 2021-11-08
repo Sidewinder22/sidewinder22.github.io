@@ -47,5 +47,5 @@ Controller łączy za pomocą slotów i sygnałów (z biblioteki QT) partie View
 
 ![sfe_screenshot](/assets/images/sfe_screenshot.png){: width="700" }
 
-Pozdrawiam,
+Pozdrawiam,  
 Sidewinder22

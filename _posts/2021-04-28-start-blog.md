@@ -23,6 +23,5 @@ Więc jak - zaczynamy? :)
 
 Trzymajcie kciuki!
 
-Pozdrawiam,
+Pozdrawiam,  
 Sidewinder22
-

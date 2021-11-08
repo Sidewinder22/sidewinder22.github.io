@@ -30,5 +30,5 @@ Dzięki temu uniknę używania czystych socketów, a aplikaja będzie bardziej p
 * `boost::asio` - komunikacja sieciowa
 * `OpenSSL` - negocjacja kluczy asymetrycznych i warstwa szyfrowania komunikacji algorytmem symetrycznym
 
-Pozdrawiam,
+Pozdrawiam,  
 Sidewinder22
