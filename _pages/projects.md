@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Projekty
+layout:     single
+title:      Projekty
 permalink: /projects/
 ---
 

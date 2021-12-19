@@ -18,13 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Od programisty do bezpiecznika
+title: "Od programisty do bezpiecznika"
+subtitle: "Version 0.2"
+name: "Sidewinder22"
 email: sidewinder22@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Od programisty do bezpiecznika - blog techniczny przedstawiający proces 
   nauki cyberbezpieczeństwa z pozycji programisty.  
 baseurl: "" #http://localhost:4000/" #/od_programisty_do_bezpiecznika" # the subpath of your site, e.g. /blog
-url: "" #https://sidewinder22.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://sidewinder22.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+repository: "Sidewinder22/sidewinder22.github.io"
 twitter_username: Sidewinder223
 github_username:  Sidewinder22
 
@@ -36,9 +39,9 @@ remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "dark" #"default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 
 
-repository: "sidewinder22/Blog"
 teaser: /assets/images/dev.png
 logo: /assets/images/logo.jpg
+locale: pl-PL
 
 
 plugins:
@@ -78,10 +81,12 @@ github: [metadata]
 # To see feature posts
 future: true
 
+# Pagination
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 
 
+# Default settings
 defaults:
   # _posts
   - scope:
@@ -94,3 +99,35 @@ defaults:
       share: true
       related: true
       show_date: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      show_date: true
+
+
+# Categories
+category_archive:
+  type: liquid
+  path: /categories/
+
+# Tags
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# Turn on search
+search : true
+
+# Timezone
+timezone: Europe/Warsaw 
+
+
+# Author info
+author:
+  name     : "Sidewinder22"
+  avatar   : "/assets/images/dev.png"
+  bio      : "Programista C++, który chce się rozwijać w branży Cyberbezpieczeństwa."
+  location : "Łódź, Poland"

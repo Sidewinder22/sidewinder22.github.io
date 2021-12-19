@@ -1,10 +1,9 @@
 ---
-layout:         single
 date:           2021-11-07 00:22:00 +0000
-tags:           problemy_programisty development programming_errors C++ QT 
+tags:           problemy_programisty development programming_errors
+categories:     C++ QT
 author:         Sidewinder22
 title:          "#3 QT linker problem"
-subtitle:       "#3 subtitle"
 description:    "Problem z linkowaniem w aplikacji używającej QT"
 header:
   teaser: /assets/images/hello_world.jpg
