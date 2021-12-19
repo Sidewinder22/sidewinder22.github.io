@@ -25,19 +25,33 @@ description: >- # this means to ignore newlines until "baseurl:"
   nauki cyberbezpieczeństwa z pozycji programisty.  
 baseurl: "" #http://localhost:4000/" #/od_programisty_do_bezpiecznika" # the subpath of your site, e.g. /blog
 url: "" #https://sidewinder22.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: Sidewinder223
+github_username:  Sidewinder22
 
 # Build settings
 #theme: minima 
-theme: jekyll-theme-midnight
+#theme: jekyll-theme-midnight
+remote_theme: mmistakes/minimal-mistakes
+#theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark" #"default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+
+
+repository: "sidewinder22/Blog"
+teaser: /assets/images/dev.png
+logo: /assets/images/logo.jpg
+
 
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-remote-theme
 
-urls:
-- text: About
-url: /about/
+include:
+  - _pages
+
+# urls:
+# - text: About
+# url: /about/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -63,3 +77,20 @@ github: [metadata]
 
 # To see feature posts
 future: true
+
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      show_date: true

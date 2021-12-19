@@ -1,5 +1,5 @@
 ---
-layout:         post
+layout:         single
 date:           2021-07-28 00:08:00 +0000
 tags:           development projects SCc
 author:         Sidewinder22

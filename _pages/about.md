@@ -1,7 +1,7 @@
 ---
-layout: page
-title: O mnie
-permalink: /about/
+layout:     single
+permalink:  /about/
+title:      "O mnie"
 ---
 
 Cześć! Nazywam się Damian Stępień (`Sidewinder22`).
