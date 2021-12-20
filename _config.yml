@@ -39,8 +39,8 @@ remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "dark" #"default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 
 
-teaser: /assets/images/dev.png
-logo: /assets/images/logo.jpg
+teaser: /assets/images/keyboard_mouse.jpg
+logo: /assets/images/keyboard.jpg
 locale: pl-PL
 
 
@@ -94,6 +94,7 @@ defaults:
       type: posts
     values:
       layout: single
+      author_profile: true
       read_time: true
       comments: true
       share: true
@@ -106,6 +107,7 @@ defaults:
     values:
       layout: single
       show_date: true
+      author_profile: true
 
 
 # Categories
@@ -128,6 +130,12 @@ timezone: Europe/Warsaw
 # Author info
 author:
   name     : "Sidewinder22"
-  avatar   : "/assets/images/dev.png"
+  avatar   : "/assets/images/keyboard_mouse.jpg"
   bio      : "Programista C++, który chce się rozwijać w branży Cyberbezpieczeństwa."
   location : "Łódź, Poland"
+
+twitter:
+  username: "Sidewinder223"
+
+# atom_feed:
+#   hide: true

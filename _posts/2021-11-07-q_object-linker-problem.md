@@ -4,10 +4,11 @@ tags:           problemy_programisty development programming_errors
 categories:     C++ QT
 author:         Sidewinder22
 title:          "#3 QT linker problem"
-description:    "Problem z linkowaniem w aplikacji używającej QT"
 header:
-  teaser: /assets/images/hello_world.jpg
+  teaser: /assets/images/keyboard.jpg
 ---
+
+Problem z linkowaniem w aplikacji używającej QT
 
 ## Opis
 

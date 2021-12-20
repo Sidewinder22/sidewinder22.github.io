@@ -3,8 +3,9 @@ date:           2021-04-28 15:00:00 +0000
 tags:           start
 author:         Sidewinder22
 title:          "#0 Wpis inaugurujący blog"
-description:    "Krótki wpis inaugurujący pisanie bloga"
 ---
+
+Krótki wpis inaugurujący pisanie bloga
 
 Cześć! Witajcie na moim blogu :)  
 Nazywam się **Sidewinder22**. Programuję w językach C++ i Python.

@@ -53,3 +53,8 @@ bundle exec jekyll build
 bundle exec jekyll serve
 bundle exec jekyll serve --baseurl ""
 ```
+
+#### Posts with Future Date
+```
+Build Jekyll with the `--future` flag.
+```

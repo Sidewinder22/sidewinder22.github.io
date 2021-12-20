@@ -1,10 +1,12 @@
 ---
 date:           2021-07-28 00:08:00 +0000
-tags:           development projects SCc
+tags:           projects SCc
+categories:     development
 author:         Sidewinder22
 title:          "#2 Rozpoczęcie nowego projektu"
-description:    "Inaguracja nowego projektu programistycznego - szyfrowanego komunikatora"
 ---
+
+Inaguracja nowego projektu programistycznego - szyfrowanego komunikatora.
 
 ## Wprowadzenie
 
