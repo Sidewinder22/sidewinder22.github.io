@@ -49,6 +49,7 @@ bundle-2.7 exec jekyll serve --incremental
 
 #### Normal 
 ```
+bundle exec jekyll build
 bundle exec jekyll serve
 bundle exec jekyll serve --baseurl ""
 ```

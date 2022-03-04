@@ -8,7 +8,7 @@ description:    "Krótki wpis inaugurujący pisanie bloga"
 ---
 
 Cześć! Witajcie na moim blogu :)  
-Nazywam się **Sidewinder22**. Programuję w językach C++ i Python.
+Nazywam się **Sidewinder22**. Programuję głównie w języku C++ i trochę Pythonie.
 
 Jestem programistą, który chciałby wyspecjalizować się w działce cyberbezpieczeństwa.  
 Aby to zrobić, muszę nauczyć się wielu rzeczy.  
