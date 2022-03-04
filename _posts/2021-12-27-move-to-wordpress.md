@@ -3,8 +3,8 @@ layout:         post
 date:           2021-12-27 00:22:00 +0000
 tags:           wordpress 
 author:         Sidewinder22
-title:          "#4 Przeniesienie bloga do wordpressa"
-description:    "Blog został przeniesiony do wordpressa"
+title:          "#4 Przeniesienie bloga na nową stronę"
+description:    "Blog został przeniesiony na nową stronę"
 ---
 
 Cześć!
