@@ -35,9 +35,11 @@ theme: jekyll-theme-midnight
 plugins:
   - jekyll-feed
 
-urls:
-- text: About
-url: /about/
+# urls:
+# - text: About
+# url: /about/
+# - text: Projects
+# url: /projects/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

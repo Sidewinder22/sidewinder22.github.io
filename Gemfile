@@ -17,6 +17,7 @@ gem "github-pages", group: :jekyll_plugins
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "addressable", ">= 2.8.0"
+  gem "webrick", "~> 1.8"
 end
 
 #gem 'jekyll-theme-midnight', '~> 0.1.1'
