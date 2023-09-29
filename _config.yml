@@ -18,19 +18,27 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Od programisty do bezpiecznika
+# title: Od programisty do bezpiecznika
+title: Sidewinder22 Blog
 email: sidewinder22@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Od programisty do bezpiecznika - blog techniczny przedstawiający proces 
-  nauki cyberbezpieczeństwa z pozycji programisty.  
+    Blog programistyczny (C++, IO, Linux)
 baseurl: "" #http://localhost:4000/" #/od_programisty_do_bezpiecznika" # the subpath of your site, e.g. /blog
 url: "" #https://sidewinder22.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-#theme: minima 
-theme: jekyll-theme-midnight
+# theme: minima
+# theme: jekyll-theme-midnight
+# theme: jekyll-theme-leap-day
+
+# theme: jekyll-theme-cayman
+
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+
 
 plugins:
   - jekyll-feed

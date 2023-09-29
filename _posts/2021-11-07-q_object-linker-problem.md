@@ -1,7 +1,7 @@
 ---
 layout:         post
 date:           2021-11-07 00:22:00 +0000
-tags:           problemy_programisty development programming_errors C++ QT 
+tags:           programming_errors C++ QT 
 author:         Sidewinder22
 title:          "#3 QT linker problem"
 description:    "Problem z linkowaniem w aplikacji używającej QT"

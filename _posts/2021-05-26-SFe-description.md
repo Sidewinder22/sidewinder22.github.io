@@ -1,7 +1,7 @@
 ---
 layout:         post
 date:           2021-05-26 15:00:00 +0000
-tags:           development projects SFe
+tags:           projects
 author:         Sidewinder22
 title:          "#1 Projekt prostego edytora tekstowego SideFileEditor"
 description:    "Opis mojego projektu prostego edytora tekstowego napisanego w C++ i QT"

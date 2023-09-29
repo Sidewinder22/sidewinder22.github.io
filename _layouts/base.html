@@ -24,6 +24,7 @@
             <nav>
                 <ul>
                     <li class="fork"><a href="/">Blog</a></li>
+                    <li class="fork"><a href="{% link tags.md %}">Tags</a></li>
                     <li class="downloads"><a href="{% link about.md %}">O mnie</a></li>
                     <li class="downloads"><a href="{% link projects.md %}">Projekty</a></li>
                     <li class="downloads"><a href="{% link resources/cpp_resources.md %}">C++ resources</a></li>
@@ -35,7 +36,7 @@
 
         <section>
         <div id="title">
-            <h1>{{ site.title | default: site.github.repository_name }}</h1>
+            <a href="/"><h1>{{ site.title | default: site.github.repository_name }}</h1></a>
             <p>{{ site.description | default: site.github.project_tagline }}</p>
             <hr>
             <span class="credits left">Project maintained by <a href="https://github.com/Sidewinder22">{\_Sidewinder22_/}</a></span>
