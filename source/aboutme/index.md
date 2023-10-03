@@ -31,8 +31,3 @@ Wszystkie opinie wyrażone na tym blogu są tylko moimi własnymi opiniami (nie 
 - Gra na instrumentach klawiszowych
 - Czytanie książek
 - Spacery
-
-# Kontakt
-
-- e-mail: sidewinder22[at]protonmail.com
-- [Linkedin](https://www.linkedin.com/in/damian-st%C4%99pie%C5%84-29717a1b9/)

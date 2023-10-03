@@ -1,7 +1,7 @@
 ---
 title: Wpis inaugurujący blog 
 date: 2023-09-01 13:38:34
-tags:
+cover: /assets/covers/park-background-2.jpg
 ---
 
 Cześć! Witaj na moim blogu 🙂

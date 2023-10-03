@@ -4,12 +4,25 @@
 
 ### Development
 ```bash
+hexo clean
+hexo generate
+
 hexo server
+```
+
+### Add new draft
+```bash
+hexo new draft "My New Draft"
+```
+
+### Display drafts
+```bash
+hexo --draft
 ```
 
 ### Add new post
 ```bash
-hexo new first-post
+hexo new "My New Post"
 ```
 
 ### Remove post
@@ -21,7 +34,7 @@ hexo new first-post
 
 ### Add new page
 ```bash
-hexo new page aboutme
+hexo new page "My new page"
 cd source/aboutme/
 vim index.md
 ```
@@ -38,3 +51,4 @@ hexo deploy
 # Docs
 * [Documentation](https://hexo.io/docs/)
 * [How to use Hexo and deploy to GitHub Pages](https://gist.github.com/btfak/18938572f5df000ebe06fbd1872e4e39)
+* [clean-blog-theme](https://github.com/klugjo/hexo-theme-clean-blog)
