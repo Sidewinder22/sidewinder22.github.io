@@ -1,8 +1,12 @@
 ---
-title: "#5 C++20 – Moduły"
+title: C++20 – Moduły
 date: 2023-09-29 15:43:27
-tags: c++20
-categories: programowanie
+tags: 
+- C++20
+- C++
+categories: 
+- programowanie
+- moduły
 author:         Sidewinder22
 description:    "Witajcie! 🙂 W końcu i na mnie przyszła pora na zapoznanie się z feature’mi ze standardu C++20."
 ---

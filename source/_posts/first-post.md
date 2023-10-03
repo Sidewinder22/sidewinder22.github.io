@@ -1,5 +1,6 @@
 ---
 title: Wpis inaugurujący blog 
+author: Sidewinder22
 date: 2023-09-01 13:38:34
 cover: /assets/covers/park-background-2.jpg
 ---
