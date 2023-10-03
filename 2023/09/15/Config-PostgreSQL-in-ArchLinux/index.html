@@ -23,7 +23,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="C++ Resources"/>
+        <meta property="og:title" content="Konfiguracja bazy danych PostgreSQL w Arch Linux"/>
     
 
     <!--Open Graph Description-->
@@ -55,7 +55,7 @@
 
     <!-- Title -->
     
-    <title>C++ Resources - Blog</title>
+    <title>Konfiguracja bazy danych PostgreSQL w Arch Linux - Blog</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -183,11 +183,7 @@
 </nav>
 
     <!-- Main Content -->
-    
-
-
-    <section class="main">
-        <!-- Page Header -->
+    <!-- Page Header -->
 <!-- Set your background image for this header in your post front-matter: cover -->
 
 <header class="intro-header" style="background-image: url('/img/desk-2.jpg')">
@@ -195,13 +191,15 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>C++ Resources</h1>
+                    <h1>Konfiguracja bazy danych PostgreSQL w Arch Linux</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
                         
+                            Posted by Sidewinder22 on
                         
-                            2023-10-03
+                        
+                            2023-09-15
                         
                     </span>
                 </div>
@@ -217,24 +215,78 @@
 
             <!-- Tags and categories -->
            
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/PostgreSQL/">#PostgreSQL</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                        
+
+<a href="/categories/Bazy-danych/">Bazy danych</a>
+
+                    
+                </div>
+            
 
             <!-- Gallery -->
             
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Strona z przydatnymi linkami dotyczącymi C++.</p>
-<h1 id="Docs"><a href="#Docs" class="headerlink" title="Docs"></a>Docs</h1><ul>
-<li><a target="_blank" rel="noopener" href="https://en.cppreference.com/w/">cppreference.com</a> – dokumentacja języka C++ -&gt; to pierwsza strona, na której powinniśmy szukać informacji o feature’ach c++ i STL</li>
-</ul>
-<h1 id="Newslettery"><a href="#Newslettery" class="headerlink" title="Newslettery"></a>Newslettery</h1><ul>
-<li><a target="_blank" rel="noopener" href="https://coders.school/ninjaletter/">ninjaletter</a> – newsletter Łukasza Ziobronia, który jest także założycielem Coders School</li>
-<li><a target="_blank" rel="noopener" href="https://www.cppstories.com/">cppstories.com</a> – newsletter (po angielsku) Bartłomieja Filipka.</li>
-</ul>
-<h1 id="Youtube"><a href="#Youtube" class="headerlink" title="Youtube"></a>Youtube</h1><ul>
-<li><a target="_blank" rel="noopener" href="https://www.youtube.com/@cppweekly">C++ Weekly With Jason Turner</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.youtube.com/@CppCon">Cppcon</a></li>
-</ul>
+                <h1 id="Wstep"><a href="#Wstep" class="headerlink" title="Wstęp"></a>Wstęp</h1><p>Zacząłem robić nowy projekt w języku C++&#x2F;QT, dla doskonalenia umiejętności – będzie to manager haseł.</p>
+<p>Do mojego nowego projektu w języku C++, potrzebuję skonfigurować bazę danych. Postaram się to po krótce opisać w tym poście.</p>
+<p>Pierwszą rzeczą, od której zacznę jest konfiguracja bazy danych PostgreSQL w systemie Arch Linux (dla innych systemów operacyjnych będzie podobnie – trzeba będzie przede wszystkim użyć managera paczek odpowiedniego dla wersji Linuksa, której używamy).</p>
+<p>To zaczynajmy!</p>
+<h1 id="Instalacja-PostgreSQL"><a href="#Instalacja-PostgreSQL" class="headerlink" title="Instalacja PostgreSQL"></a>Instalacja PostgreSQL</h1><p>Zainstalujmy paczkę z bazą danych:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S postgresql</span><br></pre></td></tr></table></figure>
+
+<p>Później przełączmy się na użytkownika <code>postgres</code>:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo -iu postgres</span><br></pre></td></tr></table></figure>
+
+<p>Następnie zainicjujemy klaster bazy danych:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[postgres@archlinux ~]$ initdb --locale pl_PL.UTF-8 -D /var/lib/postgres/data</span><br></pre></td></tr></table></figure>
+
+<p>Na koniec wylogujmy się z użytkownika postgresql, włączmy i wystartujmy serwis <code>postgresql</code>:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">logout</span></span><br><span class="line">sudo systemctl <span class="built_in">enable</span> postgresql</span><br><span class="line">sudo systemctl start postgresql</span><br></pre></td></tr></table></figure>
+
+<h1 id="Zabezpieczenie-bazy-danych"><a href="#Zabezpieczenie-bazy-danych" class="headerlink" title="Zabezpieczenie bazy danych"></a>Zabezpieczenie bazy danych</h1><p>Stwórzmy użytkownika naszej bazy danych. Użyjemy naszej nazwy użytkownika z systemu Linux. Dzięki temu nie będziemy musieli się później przełączać na użytkownika <code>postgres</code>, aby coś zrobić w naszej bazie danych.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[postgres<span class="variable">@archlinux</span> <span class="operator">~</span>]$ createuser <span class="comment">--interactive [USER]</span></span><br><span class="line">Shall the <span class="keyword">new</span> role be a superuser? (y<span class="operator">/</span>n) n</span><br><span class="line">Shall the <span class="keyword">new</span> role be allowed <span class="keyword">to</span> <span class="keyword">create</span> databases? (y<span class="operator">/</span>n) y</span><br><span class="line">Shall the <span class="keyword">new</span> role be allowed <span class="keyword">to</span> <span class="keyword">create</span> more <span class="keyword">new</span> roles? (y<span class="operator">/</span>n) n</span><br></pre></td></tr></table></figure>
+
+<p>Drugą opcję zaznaczyłem na tak, ponieważ, chciałbym, aby mój user mógł stworzyć nową bazę danych.</p>
+<p>Stwórzmy teraz naszą bazę danych:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">createdb [DataBaseName]</span><br></pre></td></tr></table></figure>
+
+<p>Przejdźmy do powłoki (ang. shell) naszej bazy danych:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">psql -d [DataBaseName]</span><br></pre></td></tr></table></figure>
+
+<p>Zmieńmy hasło naszego użytkownika:</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> [USER_NAME] <span class="keyword">WITH</span> PASSWORD <span class="string">&#x27;[NEW_PASSWORD]&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p>Teraz zmieńmy prawa dostępu do bazy danych.<br>W pliku <code>/var/lib/postgres/data/pg_hba.conf</code> zamieńmy to:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TYPE  DATABASE        USER            ADDRESS                 METHOD</span></span><br><span class="line"><span class="comment"># &quot;local&quot; is for Unix domain socket connections only</span></span><br><span class="line"><span class="built_in">local</span>   all             all                                     trust</span><br></pre></td></tr></table></figure>
+
+<p>Na to:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TYPE  DATABASE        USER            ADDRESS                 METHOD</span></span><br><span class="line"><span class="comment"># &quot;local&quot; is for Unix domain socket connections only</span></span><br><span class="line"><span class="built_in">local</span>   [DATABASE_NAME]             [USER]                       scram-sha-256</span><br></pre></td></tr></table></figure>
+
+<p>Następnie dodamy wymaganie hasła przy logowaniu do bazy danych.<br>W pliku: <code>/var/lib/postgres/data/postgresql.conf</code> odkomentujmy tą linijkę:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">password_encryption = scram-sha-256     <span class="comment"># scram-sha-256 or md5</span></span><br></pre></td></tr></table></figure>
+
+<p>Na koniec zrestartujmy serwis <code>postgresql</code>, aby zaaplikować zmiany:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl restart postgresql</span><br></pre></td></tr></table></figure>
+
+<p>I spróbujmy zalogować się teraz do naszej bazy danych (za pomocą komendy <code>psql -d [DataBaseName]</code>). Teraz powinniśmy zostać poproszeni o hasło, po podaniu którego pokaże nam się interaktywna powłoka PostgreSQL.</p>
+<p>Oto zrzut mojej konsoli:</p>
+<p><img src="/assets/images/zrzut-konsoli-postresql_archLinux.png" alt="zrzut_konsoli-postgresql-archlinux"></p>
+<h1 id="Podsumowanie"><a href="#Podsumowanie" class="headerlink" title="Podsumowanie"></a>Podsumowanie</h1><p>W tym poście przedstawiłem podstawową konfigurację bazy danych PostgreSQL. W następnym poście zajmiemy się dodaniem stworzeniem struktury tabel i zawartości, która ma być przechowywana w bazie danych.</p>
+<p>Mam nadzieję, że post jest przydatny 🙂 W razie jakichkolwiek problemów, dawajcie znać w komentarzach!</p>
+<p>Pozdrawiam,<br>{\_Sidewinder22_&#x2F;}</p>
 
 
                 
@@ -257,12 +309,6 @@
         </div>
     </div>
 </article>
-    </section>
-
-
-
-
-
 
     <!-- Footer -->
     <hr />

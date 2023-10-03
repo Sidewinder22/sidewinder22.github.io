@@ -23,7 +23,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Blog"/>
+        <meta property="og:title" content="QT linker problem"/>
     
 
     <!--Open Graph Description-->
@@ -36,7 +36,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website"/>
+        <meta property="og:type" content="article"/>
     
 
     <!--Page Cover-->
@@ -55,7 +55,7 @@
 
     <!-- Title -->
     
-    <title>Blog</title>
+    <title>QT linker problem - Blog</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -184,104 +184,97 @@
 
     <!-- Main Content -->
     <!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
 <header class="intro-header" style="background-image: url('/img/desk-2.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>Blog</h1>
-                    <hr class="small">
-                    <span class="subheading">C++, IO & Linux Developer Blog</span>
+                <div class="post-heading">
+                    <h1>QT linker problem</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                            Posted by Sidewinder22 on
+                        
+                        
+                            2023-09-05
+                        
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            
-                <div class="post-preview">
-    <a href="/2023/09/29/cpp20-modules/">
-        <h2 class="post-title">
-            C++20 – Moduły
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-            Posted by Sidewinder22 on
-        
-        2023-09-29
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2023/09/15/Config-PostgreSQL-in-ArchLinux/">
-        <h2 class="post-title">
-            Konfiguracja bazy danych PostgreSQL w Arch Linux
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-            Posted by Sidewinder22 on
-        
-        2023-09-15
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2023/09/05/QT-linker-problem/">
-        <h2 class="post-title">
-            QT linker problem
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-            Posted by Sidewinder22 on
-        
-        2023-09-05
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2023/09/01/first-post/">
-        <h2 class="post-title">
-            Wpis inaugurujący blog
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-            Posted by Sidewinder22 on
-        
-        2023-09-01
-    </p>
-</div>
-<hr>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/C/">#C++</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                        
+
+<a href="/categories/programowanie/">programowanie</a>/ <a href="/categories/programowanie/problemy-programisty/">problemy_programisty</a>
+
+                    
+                </div>
             
 
-            <ul class="pager">
-    
-    
-</ul>
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="Opis"><a href="#Opis" class="headerlink" title="Opis"></a>Opis</h1><p>Podczas tworzenia kodu do jednego z moich projektów, natrafiłem na problem związany z linkowaniem. Chwilę mi zajęło znalezienie rozwiązania w internecie, więc pomyślałem, że przedstawię je pokrótce w tym poście.</p>
+<p>Projekt jest wykonany w C++ przy użyciu biblioteki QT.<br>Poniżej są logi przedstawiające błąd linkowania:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">g++ -Wl,-O1 -o Side-Crypto-Communicator Application.o main.o HLine.o InputPanel.o Menu.o OutputPanel.o Panel.o StatusBar.o ToolBar.o UIManager.o UserAction.o Window.o Logger.o NetworkManager.o TcpClient.o TcpServer.o moc_InputPanel.o moc_Menu.o moc_OutputPanel.o moc_Panel.o moc_StatusBar.o moc_ToolBar.o moc_UIManager.o moc_UserAction.o moc_Window.o moc_NetworkManager.o   /usr/lib/libQt5Widgets.so /usr/lib/libQt5Gui.so /usr/lib/libQt5Core.so -lGL -lpthread   </span><br><span class="line">/usr/bin/ld: Application.o: <span class="keyword">in</span> <span class="keyword">function</span> `Application::Application()<span class="string">&#x27;:</span></span><br><span class="line"><span class="string">Application.cpp:(.text+0x4e): undefined reference to `vtable for Application&#x27;</span></span><br><span class="line">/usr/bin/ld: main.o: <span class="keyword">in</span> <span class="keyword">function</span> `Application::~Application()<span class="string">&#x27;:</span></span><br><span class="line"><span class="string">main.cpp:(.text._ZN11ApplicationD2Ev[_ZN11ApplicationD5Ev]+0x3): undefined reference to `vtable for Application&#x27;</span></span><br><span class="line">/usr/bin/ld: main.o: <span class="keyword">in</span> <span class="keyword">function</span> `Application::~Application()<span class="string">&#x27;:</span></span><br><span class="line"><span class="string">main.cpp:(.text._ZN11ApplicationD0Ev[_ZN11ApplicationD5Ev]+0x3): undefined reference to `vtable for Application&#x27;</span></span><br><span class="line">collect2: error: ld returned 1 <span class="built_in">exit</span> status</span><br><span class="line">make: *** [Makefile:451: Side-Crypto-Communicator] Błąd 1</span><br></pre></td></tr></table></figure>
+
+<h2 id="Rozwiazanie"><a href="#Rozwiazanie" class="headerlink" title="Rozwiązanie"></a>Rozwiązanie</h2><p>Problem z linkowaniem pojawił się po dodaniu makra <code>Q_OBJECT</code> do pliku nagłówkowego <code>Application.hpp</code>.<br>Była to jedyna wprowadzona zmiana. Nie wykorzystałem jeszcze niczego z biblioteki QT.</p>
+<p>Okazało się, że nie zaktualizowałem sekcji <code>HEADERS</code> w pliku projektowym QT <code>build.pro</code>.</p>
+<p>Wystarczyło tylko dodać folder src, w którym właśnie znajduje się plik nagłówkowy <code>Application.hpp</code>, do tej sekcji:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HEADERS         +=  ../src/*.hpp</span><br></pre></td></tr></table></figure>
+
+<p>I wtedy wszystko się pięknie zlinkowało.</p>
+<h2 id="Podsumowanie"><a href="#Podsumowanie" class="headerlink" title="Podsumowanie"></a>Podsumowanie</h2><p>To taki krótki wpis z seri <em>problemy programisty</em>.<br>Mam nadzieję, że komuś się przyda. Możliwe, że nawet mi! ;)</p>
+<p>Jeśli macie jakieś pytania, to piszcie śmiało!</p>
+<p>Pozdrawiam,<br>{\_Sidewinder22_&#x2F;}</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+    <hr />
+    <h3>Komentarze:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+                </div>
+            
         </div>
     </div>
-</div>
-
-
+</article>
 
     <!-- Footer -->
     <hr />
@@ -360,7 +353,7 @@
         var dsq = document.createElement('script');
         dsq.type = 'text/javascript';
         dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
