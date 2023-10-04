@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="Sidewinder22 personal blog"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Sidewinder22"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Szkielet aplikacji webowej w JavaScript"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Sidewinder22 personal blog"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="https://sidewinder22.github.ioimg/desk-2.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="https://sidewinder22.github.ioimg/desk-2.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>Szkielet aplikacji webowej w JavaScript - Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Sidewinder22 Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/C-Resources">
+                            
+                                C++ Resources
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/Projects">
+                            
+                                Projekty
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/aboutme">
+                            
+                                O mnie
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tagi
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Kategorie
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archiwalne
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/Sidewinder22">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/damian-st%C4%99pie%C5%84-29717a1b9/">
+                            
+                                <i class="fa fa-linkedin fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/desk-2.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Szkielet aplikacji webowej w JavaScript</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                            Posted by Sidewinder22 on
+                        
+                        
+                            2023-09-25
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/js/">#js</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                        
+
+<a href="/categories/programowanie/">programowanie</a>
+
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="Wstep"><a href="#Wstep" class="headerlink" title="Wstęp"></a>Wstęp</h1><p>Cześć!</p>
+<p>W tym poście chciałbym pokazać Wam, jak stworzyć szkielet takiej aplikacji webowej i jak połączyć backend z fronted’em.</p>
+<p>Do tego projektu wykorzystam następujące narzędzia: <a target="_blank" rel="noopener" href="https://nodejs.org/en">Node.js</a> + <a target="_blank" rel="noopener" href="https://expressjs.com/">Express</a> do backendu, a <a target="_blank" rel="noopener" href="https://pl.legacy.reactjs.org/">React</a> do frontendu.</p>
+<h1 id="Przygotowanie"><a href="#Przygotowanie" class="headerlink" title="Przygotowanie"></a>Przygotowanie</h1><h2 id="Wymagania-wstepne"><a href="#Wymagania-wstepne" class="headerlink" title="Wymagania wstępne"></a>Wymagania wstępne</h2><p>Zanim ruszymy przedstawmy kilka wymagań wstępnych:</p>
+<ul>
+<li>konto na <a target="_blank" rel="noopener" href="https://github.com/">Githubie</a>,</li>
+<li>system operacyjny Linux – dla niego podaję komendy powłoki (może być także Windows z zainstalowanym klientem gita i managerem paczek npm lub środowiskiem WSL),</li>
+<li>przeglądarka internetowa – u mnie to będzie Firefox,</li>
+<li>edytor tekstu – w moim przypadku będzie to Visual Studio Code.</li>
+</ul>
+<h2 id="Instalacja-npm"><a href="#Instalacja-npm" class="headerlink" title="Instalacja npm"></a>Instalacja npm</h2><p>Pierwsze co zrobimy, to będzie instalacja managera paczek javascript:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S npm    <span class="comment"># Arch Linux (pacman based distros)</span></span><br><span class="line">sudo apt install npm  <span class="comment"># Ubuntu (apt-get based distros)</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Hostowanie-projektu-na-GitHubie"><a href="#Hostowanie-projektu-na-GitHubie" class="headerlink" title="Hostowanie projektu na GitHubie"></a>Hostowanie projektu na GitHubie</h2><p>Do przechowywania kodu źródłowego projektu użyję GitHub’a.<br>Należy stworzyć tam projekt, a następnie sklonować go na nasz dysk:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> [link-do-stworzonego-projektu]</span><br><span class="line"><span class="built_in">cd</span> [nazwa-katalogu-projektu]</span><br><span class="line"></span><br><span class="line"><span class="comment"># np. mój przykładowy projekt:</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/Sidewinder22/SideFileEditor</span><br><span class="line"><span class="built_in">cd</span> SideFileEditor</span><br></pre></td></tr></table></figure>
+
+<h1 id="Przygotowanie-Backendu"><a href="#Przygotowanie-Backendu" class="headerlink" title="Przygotowanie Backendu"></a>Przygotowanie Backendu</h1><p>Wchodzimy do sklonowanego z serwisu GitHub katalogu, w którym będzie umieszczony nasz projekt, w tworzymy w nim podkatalog i inicjujemy projekt.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> backend</span><br><span class="line"><span class="built_in">cd</span> backend</span><br><span class="line">npm init -y</span><br></pre></td></tr></table></figure>
+
+<p>Ostatnia komenda utworzy nam plik <code>package.json</code>, w którym będą umieszczone dane konfiguracyjne naszego backendu.</p>
+<p>Zainstalujmy framework Express:</p>
+<pre><code>npm install express --save
+</code></pre>
+<p>Do pliku „scripts” znajdującego się w pliku <code>package.json</code>, dodajmy komendę do uruchomienia naszego skryptu:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// package.json</span></span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"><span class="attr">&quot;start&quot;</span><span class="punctuation">:</span> <span class="string">&quot;node app.js&quot;</span><span class="punctuation">,</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>Stwórzmy przykładowy plik <code>app.js</code> korzystający z frameworka Express:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// backend/app.js</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> app = <span class="title function_">express</span>();</span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/&#x27;</span>, <span class="keyword">function</span>(<span class="params">request, response</span>) &#123;</span><br><span class="line">    response.<span class="title function_">send</span>(<span class="string">&#x27;&lt;h1&gt;Expense Manager&lt;/h1&gt;&#x27;</span>);</span><br><span class="line">&#125;);</span><br><span class="line">app.<span class="title function_">listen</span>(<span class="number">3000</span>, <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Expense manager backend app listening on the port 3000&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>Spróbujmy uruchomić projekt, używając naszej dodanej komendy <code>start</code>:</p>
+<pre><code>npm start
+</code></pre>
+<p>Teraz możemy otworzyć przeglądarkę pod adresem <code>http://localhost:3000/</code> i sprawdzić, czy nasz kod faktycznie działa. Jeśli tak jest, to pojawi się strona wraz z nagłówkiem:</p>
+<p><img src="/assets/images/app_web_js_sklt/app_web_js_sk-1.png" alt="Page with header"></p>
+<h1 id="Przygotowanie-Frontendu"><a href="#Przygotowanie-Frontendu" class="headerlink" title="Przygotowanie Frontendu"></a>Przygotowanie Frontendu</h1><p>Teraz zajmiemy się klientem naszej aplikacji webowej.<br>Zaczniemy od stworzenia nowej aplikacji w Reakcie:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npx create-react-app frontend</span><br><span class="line"><span class="built_in">cd</span> frontend</span><br><span class="line">npm start</span><br></pre></td></tr></table></figure>
+
+<p>Jeśli wszystko się powiedzie, to ostatnia komenda uruchomi nam nową kartę w przeglądarce, która będzie wyglądała tak:</p>
+<p><img src="/assets/images/app_web_js_sklt/app_web_js_sk-2.png" alt="Welcome screen from React"></p>
+<h1 id="Implementacja"><a href="#Implementacja" class="headerlink" title="Implementacja"></a>Implementacja</h1><p>Mamy już działające frontend i backend – na razie oddzielnie. Przejdźmy teraz do kolejnego etapu – spróbujemy je razem połączyć.<br>Dodajmy do backendu dodatkowy endpoint (<code>/welcome</code>):</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// backend/app.js</span></span><br><span class="line"></span><br><span class="line">...</span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/welcome&#x27;</span>, <span class="keyword">function</span>(<span class="params">request, response</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Handling welcome request...&#x27;</span>);</span><br><span class="line">    response.<span class="title function_">setHeader</span>(<span class="string">&#x27;Content-Type&#x27;</span>, <span class="string">&#x27;application/json&#x27;</span>);</span><br><span class="line">    response.<span class="title function_">end</span>(<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(<span class="string">&#x27;&#123;&quot;label&quot;: &quot;Welcome from the backend!&quot;&#125;&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>A do frontendu dodamy przycisk, naciśnięcie którego spowoduje wysłanie requestu do serwera i wyświetli zawartość otrzymanego jsona.<br>Najpierw jednak usuniemy zawartość folderu <code>src</code>. Sami stworzymy w nim szkielet aplikacji React.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// frontend/src/App.js</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./index.css&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">React</span>, &#123; <span class="title class_">Component</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">App</span> <span class="keyword">extends</span> <span class="title class_ inherited__">Component</span> &#123;</span><br><span class="line">    <span class="title function_">constructor</span>(<span class="params">props</span>) &#123;</span><br><span class="line">        <span class="variable language_">super</span>(props);</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">state</span> = &#123;</span><br><span class="line">            <span class="attr">buttonLabel</span>: <span class="string">&quot;Connect&quot;</span>,</span><br><span class="line">            <span class="attr">data</span>: <span class="literal">null</span></span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">handleButtonClick</span> = <span class="variable language_">this</span>.<span class="property">handleButtonClick</span>.<span class="title function_">bind</span>(<span class="variable language_">this</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="title function_">handleButtonClick</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Handling button click&#x27;</span>);</span><br><span class="line">        <span class="title function_">fetch</span>(<span class="string">&#x27;http://localhost:2999/welcome&#x27;</span>)</span><br><span class="line">            .<span class="title function_">then</span>(<span class="function"><span class="params">response</span> =&gt;</span> response.<span class="title function_">json</span>())</span><br><span class="line">            .<span class="title function_">then</span>(<span class="function"><span class="params">data</span> =&gt;</span> &#123;</span><br><span class="line">                <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;data: %s&#x27;</span>, data)</span><br><span class="line">                <span class="keyword">const</span> parsedData = <span class="title class_">JSON</span>.<span class="title function_">parse</span>(data)</span><br><span class="line">                <span class="keyword">const</span> label = parsedData.<span class="property">label</span>;</span><br><span class="line">                <span class="variable language_">this</span>.<span class="title function_">setState</span>(&#123; <span class="attr">data</span>: label&#125;)</span><br><span class="line">            &#125;)</span><br><span class="line">            .<span class="title function_">then</span>(<span class="variable language_">this</span>.<span class="title function_">setState</span>(&#123; <span class="attr">buttonLabel</span>: <span class="string">&quot;Connected&quot;</span>&#125;))</span><br><span class="line">            .<span class="title function_">catch</span>(<span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">                <span class="variable language_">console</span>.<span class="title function_">error</span>(error);</span><br><span class="line">                </span><br><span class="line">                <span class="keyword">return</span> &#123; <span class="attr">name</span>: <span class="string">&quot;network error&quot;</span>, <span class="attr">description</span>: <span class="string">&quot;&quot;</span>&#125;;</span><br><span class="line">            &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="title function_">render</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line">            <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                    Expense Manager</span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;<span class="name">button</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">                    <span class="attr">className</span>=<span class="string">&#x27;connect_button&#x27;</span></span></span></span><br><span class="line"><span class="tag"><span class="language-xml">                    <span class="attr">onClick</span>=<span class="string">&#123;</span> <span class="attr">this.handleButtonClick</span> &#125;&gt;</span></span></span><br><span class="line"><span class="language-xml">                        &#123; this.state.buttonLabel &#125;</span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">                    <span class="tag">&lt;<span class="name">b</span>&gt;</span>Received data<span class="tag">&lt;/<span class="name">b</span>&gt;</span>: &#123; this.state.data &#125;</span></span><br><span class="line"><span class="language-xml">                <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">        )</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title class_">App</span>;</span><br></pre></td></tr></table></figure>
+
+<p>Do tego dodamy krótki plik ze stylami:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* frontend/src/index.css */</span></span><br><span class="line"></span><br><span class="line">* &#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">box-sizing</span>: border-size;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1em</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">h2</span> &#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.connect_button</span> &#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">5px</span>;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">5px</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>I oczywiście główny plik aplikacji Reacta:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// frontend/src/index.js</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">React</span> <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">ReactDOM</span> <span class="keyword">from</span> <span class="string">&#x27;react-dom&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./index.css&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">App</span> <span class="keyword">from</span> <span class="string">&#x27;./App&#x27;</span>;</span><br><span class="line"><span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">App</span> /&gt;</span></span>,</span><br><span class="line">    <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;root&#x27;</span>)</span><br><span class="line">); </span><br></pre></td></tr></table></figure>
+
+<p>Teraz nadeszła pora na przetestowanie naszej implementacji. Tak wygląda strona po uruchomieniu:</p>
+<p><img src="/assets/images/app_web_js_sklt/app_web_js_sk-3.png" alt="Page with header and Connect button"></p>
+<p>Kliknijmy przycisk <code>Connect</code> i zobaczmy, co się stanie.</p>
+<p><img src="/assets/images/app_web_js_sklt/app_web_js_sk-4.png" alt="Page with header and Connected button"></p>
+<p>Zmienił się napis na przycisku z <code>Connect</code> na <code>Connected!</code><br>Ale w linii <code>Received data:</code> nic się nie pojawiło.<br>Sprawdźmy, co się stało. W tym celu uruchomimy konsolę deweloperską przeglądarki.<br>Kliknijmy prawy przycisk myszy na naszej stronie i wybierzmy opcję <code>Zbadaj</code>. Na stronie pojawi się widok narzędzi deweloperskich. Wybierzmy Konsolę (Console) i jeszcze raz kliknijmy nasz przycisk <code>Connect</code>.</p>
+<p><img src="/assets/images/app_web_js_sklt/app_web_js_sk-5.png" alt="Page with header and Connected button and errors from console"></p>
+<p>Brawo! Właśnie trafiliśmy na problem związany z dziedziną cyberbezpieczeństwa: pojawił się błąd związany z <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Same-origin_policy">Same Origin Policy (SOP)</a>.<br>Jest to zabezpieczenie wbudowane w przeglądarkę. Uniemożliwia ono dwóm aplikacją mającym różne Originy korzystanie z elementów innej aplikacji.</p>
+<p>Na Origin składają się trzy elementy: protokół, host (domena i subdomena to dwie różne rzeczy) i port.Zastanówmy się, jakie Originy mamy w naszej aplikacji:</p>
+<pre><code>http://localhost:2999 – frontend
+http://localhost:3000 – backend
+</code></pre>
+<p>Frontend działający pod pierwszym Originem próbuje pobrać dane tekstowe z drugiego Originu – stąd powyższy błąd.</p>
+<p>Aby go naprawić użyjemy mechanizmu <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">CORS (Cross-Origin Resource Sharing)</a>. Umożlwia on wykonywanie zapytań HTTP pomiędzy różnymi Originami.<br>Zaczniemy od instalacji modułu cors na backendzie (wywołamy ją oczywiście w folderze backend):</p>
+<pre><code>npm install cors
+</code></pre>
+<p>Dodajmy także zmiany w kodzie backendu, które umożliwią nam skorzystanie z tego modułu. Dodamy je na początku pliku, zaraz po definicji numeru portu.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// backend/app.js</span></span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"><span class="keyword">var</span> cors = <span class="built_in">require</span>(<span class="string">&#x27;cors&#x27;</span>)</span><br><span class="line">app.<span class="title function_">use</span>(<span class="title function_">cors</span>(&#123;</span><br><span class="line">    <span class="attr">origin</span>: <span class="string">&#x27;http://localhost:3000&#x27;</span></span><br><span class="line">&#125;));</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>Na powyższym listinigu widać, że dodaliśmy do Origina adres naszej aplikacji frontend.</p>
+<p>Teraz uruchomimy jeszcze raz nasz backend za pomocą komedy: <code>npm start</code> .<br>Jeszcze tylko odświeżymy stronę i wciśniemy przycisk – oto efekt:</p>
+<p><img src="/assets/images/app_web_js_sklt/app_web_js_sk-6.png" alt="Page with Connected button and response from backend"></p>
+<h1 id="Podsumowanie"><a href="#Podsumowanie" class="headerlink" title="Podsumowanie"></a>Podsumowanie</h1><p>Gratulacje!<br>Udało nam się odebrać krótki tekst powitalny z naszego backendu. Mamy już więc podstawowy szkielet aplikacji w architekturze klient-serwer.</p>
+<p>To jeden z moich początkowych wpisów, mam nadzieję, że komuś z Was się przyda 🙂<br>Wszystkie uwagi i pytania zgłaszajcie śmiało w komentarzach.</p>
+<p>Pozdrawiam,<br>{\_Sidewinder22_&#x2F;}</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+    <hr />
+    <h3>Komentarze:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/Sidewinder22" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/damian-st%C4%99pie%C5%84-29717a1b9/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="mailto:sidewinder22@protonmail.com" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2023 Sidewinder22<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'sidewinder22-github-io';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+</body>
+
+</html>
