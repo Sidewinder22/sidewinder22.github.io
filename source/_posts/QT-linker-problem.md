@@ -4,7 +4,7 @@ date: 2023-09-05 20:56:03
 tags: C++
 categories:
 - programowanie
-- problemy_programisty
+- problemy programisty
 author: Sidewinder22
 ---
 

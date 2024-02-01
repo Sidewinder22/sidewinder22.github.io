@@ -3,19 +3,20 @@ title: Projects
 date: 2023-10-03 20:39:51
 ---
 
-# Side System Monitor
+# Desk Controller
 
-Monitor procesów w systemie Linux.
-To projekt, którym aktualnie się zajmuję.
+Projekt, którym aktualnie się zajmuję.  
+Jest to monitor biurka/PC, który wyświetla dane na Raspberry Pi.  
+Frontend do niego jest tworzony w qml, a backend w C++ z użyciem biblioteki Qt.
 
-W celu uzyskania informacji o procesach, program wczytuje i parsuje dane z katalogu `/proc`.
+Ta aplikacja będzie się łączyć z System-Monitor-Client, która będzie działać na PC, którego obciążenie ma być śledzone. Będzie nawiązywać połączenie po socketach do Desk Controllera i wysyłać dane o aktualnym obciążeniu PC.
 
-## Technologie
+## Technologie:
 
-- C++17
+- C++20
 - CMake
-- Qt6/QML
-
+- QML
+- Qt6
 
 # Side File Editor
 
