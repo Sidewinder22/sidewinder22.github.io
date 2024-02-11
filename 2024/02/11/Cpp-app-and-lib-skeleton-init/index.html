@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="Sidewinder22 personal blog"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Sidewinder22"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="C++ project structure (cmake/*.so/gtest)"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Sidewinder22 personal blog"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="https://sidewinder22.github.ioimg/dev-env-9.png"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="https://sidewinder22.github.ioimg/dev-env-9.png"/>
+    
+
+    <!-- Title -->
+    
+    <title>C++ project structure (cmake/*.so/gtest) - Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Sidewinder22 Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/C-Resources">
+                            
+                                C++ Resources
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/Projects">
+                            
+                                Projekty
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/aboutme">
+                            
+                                O mnie
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tagi
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Kategorie
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archiwalne
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/Sidewinder22">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/damian-st%C4%99pie%C5%84-29717a1b9/">
+                            
+                                <i class="fa fa-linkedin fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/dev-env-9.png')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>C++ project structure (cmake/*.so/gtest)</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                            Posted by Sidewinder22 on
+                        
+                        
+                            2024-02-11
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/C/">#C++</a> <a href="/tags/CMake/">#CMake</a> <a href="/tags/bibliotek-wspoldzielona/">#bibliotek współdzielona</a> <a href="/tags/Google-Test/">#Google Test</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                        
+
+<a href="/categories/projekty/">projekty</a>
+
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="Wstep"><a href="#Wstep" class="headerlink" title="Wstęp"></a>Wstęp</h1><p>Witajcie! :)<br>Ostatnio potrzebowałem zainicjalizować projekt aplikacji w C++ z wykorzystaniem cmake’a, w którym będziemy mieli bibliotekę współdzieloną i testy jednostkowe z wykorzystaniem frameworku <a target="_blank" rel="noopener" href="https://github.com/google/googletest">Google Test</a>.</p>
+<p>Udało mi się to zrobić, więc chciałem się tym z Wami podzielić, a także przy okazji zanotować to sobie na przyszłość ;)  </p>
+<h1 id="Struktura"><a href="#Struktura" class="headerlink" title="Struktura"></a>Struktura</h1><p>Tak się przedstawia struktura plików i katalogów (zrzut ekranu z narzędzia <em>tree</em>):</p>
+<p><img src="/assets/images/cpp-init-tree.png" alt="cpp-init-tree"></p>
+<h2 id="Glowny-katalog"><a href="#Glowny-katalog" class="headerlink" title="Główny katalog"></a>Główny katalog</h2><p>Jak widać na screenshot’cie, w folderze projektu znajduje się jeden plik: <code>CMakeLists.txt</code> oraz trzy katalogi: <code>app</code>, <code>lib</code> i <code>test</code>.<br>Przyjrzyjmy się zatem ich zawartości.</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># CMakeLists.txt</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">cmake_minimum_required</span>(VERSION <span class="number">3.22</span>)                                        <span class="comment">#1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">project</span>(system-monitor-client VERSION <span class="number">0.0</span>.<span class="number">1</span> LANGUAGES CXX)                  <span class="comment">#2</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">set</span>(CMAKE_CXX_STANDARD <span class="number">20</span>)                                                  <span class="comment">#3</span></span><br><span class="line"><span class="keyword">set</span>(CMAKE_CXX_STANDARD_REQUIRED <span class="keyword">ON</span>)                                         <span class="comment">#3</span></span><br><span class="line"><span class="keyword">set</span>(CMAKE_CXX_FLAGS <span class="string">&quot;$&#123;CMAKE_CXX_FLAGS&#125; -Wall -Wextra -pedantic -fPIC&quot;</span>)     <span class="comment">#4</span></span><br><span class="line"><span class="keyword">set</span>(EXECUTABLE_OUTPUT_PATH <span class="variable">$&#123;PROJECT_BINARY_DIR&#125;</span>/bin)                       <span class="comment">#5</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">add_subdirectory</span>(app)                                                       <span class="comment">#6</span></span><br><span class="line"><span class="keyword">add_subdirectory</span>(lib)</span><br><span class="line"><span class="keyword">add_subdirectory</span>(<span class="keyword">test</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#7</span></span><br><span class="line"><span class="keyword">include</span>(FetchContent)</span><br><span class="line">FetchContent_Declare(</span><br><span class="line">    googletest</span><br><span class="line">    URL https://github.com/google/googletest/archive/<span class="number">03597</span>a01ee50ed33e9dfd640b249b4be3799d395.zip</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># For Windows: Prevent overriding the parent project&#x27;s compiler/linker settings</span></span><br><span class="line"><span class="keyword">set</span>(gtest_force_shared_crt <span class="keyword">ON</span> CACHE BOOL <span class="string">&quot;&quot;</span> FORCE)</span><br><span class="line"></span><br><span class="line">FetchContent_MakeAvailable(googletest)</span><br></pre></td></tr></table></figure>
+
+<p>Wyjaśnijmy sobie zawartość tego pliku - jest go główny plik cmake naszego projektu:</p>
+<ul>
+<li><code>#1</code> - ustawienie minimalnej wymaganej wersji projektu,</li>
+<li><code>#2</code> - ustawienie nazwy projektu, </li>
+<li><code>#3</code> - dwie flagi ustawiające standard <code>C++20</code>,</li>
+<li><code>#4</code> - kilka flag kompilatora z dodatkowymi sprawdzeniami i ostrzeżeniami,</li>
+<li><code>#5</code> - ustawienie katalogu, w którym znajdzie się nasz zbudowana binarka,</li>
+<li><code>#6</code> - dodanie podkatalogów,</li>
+<li><code>#7</code> - instalacja Google Test’a (skopiowana z tej <a target="_blank" rel="noopener" href="https://google.github.io/googletest/quickstart-cmake.html#set-up-a-project">instrukcji</a>).</li>
+</ul>
+<h2 id="App-aplikacja"><a href="#App-aplikacja" class="headerlink" title="App - aplikacja"></a>App - aplikacja</h2><p>Tutaj mamy dwa pliki - <code>CMakeLists.txt</code> i <code>main.cpp</code>.</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># app/CMakeLists.txt</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">set</span>(APP <span class="variable">$&#123;PROJECT_NAME&#125;</span>)        <span class="comment">#1</span></span><br><span class="line"><span class="keyword">set</span>(LIB <span class="variable">$&#123;PROJECT_NAME&#125;</span>-lib)    <span class="comment">#1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">add_executable</span>(<span class="variable">$&#123;APP&#125;</span>           <span class="comment">#2</span></span><br><span class="line">    main.cpp</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">target_link_libraries</span>(<span class="variable">$&#123;APP&#125;</span>    <span class="comment">#3</span></span><br><span class="line">    PRIVATE</span><br><span class="line">    <span class="variable">$&#123;LIB&#125;</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>Opis:</p>
+<ul>
+<li><code>#1</code> - ustawienie zmiennych <code>APP</code> i <code>LIB</code>, aby łatwiej się do nich potem odnosić,</li>
+<li><code>#2</code> - instrukcja tworząca plik wykonywalny (w tym przypadku z pliku <code>main.cpp</code>),</li>
+<li><code>#3</code> - instrukcja linkująca bibliotekę <code>LIB</code> do naszej aplikacji <code>APP</code>.</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// app/main.cpp</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;Application.hpp&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;### System Monitor Client ###&quot;</span> &lt;&lt; std::endl;</span><br><span class="line"></span><br><span class="line">    Application app;    <span class="comment">//1</span></span><br><span class="line">    app.<span class="built_in">start</span>();        <span class="comment">//1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>To plik zawierający funkcję main naszej aplikacji. Zbyt wiele tu się nie dzieje:</p>
+<ul>
+<li><code>//1</code> - utworzenie obiektu Application i wywołanie na nim metody start.</li>
+</ul>
+<h2 id="Lib-biblioteka-wspoldzielona"><a href="#Lib-biblioteka-wspoldzielona" class="headerlink" title="Lib - biblioteka współdzielona"></a>Lib - biblioteka współdzielona</h2><p>Główny cmake file:</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># lib/CMakeLists.txt</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">add_subdirectory</span>(src)</span><br></pre></td></tr></table></figure>
+
+<p>Tu nie ma nic ciekawego, dodajemy tylko podkatalog.</p>
+<p>Poniżej mamy dwa katalogi <code>include</code> i <code>src</code>. W pierwszym z nich będą znajdowały się pliki nagłówkowe, a w drugim pliki źródłowe.<br>Ułatwi nam to dodanie plików nagłówkowych do naszej biblioteki.</p>
+<p>W poniższych katalogach mamy tylko po jednym pliku nagłówkowym i źródłowym, ale w rzeczywistym projekcie, będziemy ich mieli duużo więcej :)</p>
+<h3 id="include"><a href="#include" class="headerlink" title="include"></a>include</h3><p>Plik nagłówkowy:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// lib/include/Application.hpp</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">ifndef</span> APPLICATION_HPP_</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> APPLICATION_HPP_</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Application</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">start</span><span class="params">()</span></span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span> <span class="comment">// APPLICATION_HPP_</span></span></span><br></pre></td></tr></table></figure>
+
+<p>Deklaracja klasy z jedną metodą: <code>bool start()</code>.</p>
+<h3 id="src"><a href="#src" class="headerlink" title="src"></a>src</h3><p>Kod źródłowy naszej biblioteki:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// lib/src/Application.cpp</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;Application.hpp&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">Application::start</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;App started&quot;</span> &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Definicja naszej metody <code>bool start()</code>.</p>
+<p>Cmake:</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># lib/src/CMakeLists.txt</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">set</span>(LIB <span class="variable">$&#123;PROJECT_NAME&#125;</span>-lib)</span><br><span class="line"></span><br><span class="line"><span class="keyword">add_library</span>(<span class="variable">$&#123;LIB&#125;</span> SHARED                       <span class="comment">#1</span></span><br><span class="line">    Application.cpp</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">target_include_directories</span>(<span class="variable">$&#123;LIB&#125;</span>               <span class="comment">#2</span></span><br><span class="line">    <span class="comment"># For the public header files               #3</span></span><br><span class="line">    PUBLIC</span><br><span class="line">    <span class="variable">$&#123;$&#123;PROJECT_NAME&#125;</span>_SOURCE_DIR&#125;/lib/<span class="keyword">include</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># For only private header files             #4</span></span><br><span class="line">    PRIVATE</span><br><span class="line">    <span class="variable">$&#123;$&#123;PROJECT_NAME&#125;</span>_SOURCE_DIR&#125;/lib/src</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<p>I kolejny plik cmake, w którym dzieje się magia z utworzeniem naszej biblioteki współdzielonej:</p>
+<ul>
+<li><code>#1</code> - utworzenie biblioteki współdzielonej (<code>SHARED</code> -&gt; współdzielona, <code>STATIC</code> -&gt; statyczna),</li>
+<li><code>#2</code> - dodanie katalogu z nagłówkami do naszej biblioteki,</li>
+<li><code>#3</code> - <code>include</code> dodajemy jako <code>PUBLIC</code>, aby użytkownicy naszej biblioteki mogli z nich korzystać,</li>
+<li><code>#4</code> - <code>src</code> dodajemy jako <code>PRIVATE</code>, ponieważ w tym katalogu mogą się znajdować pliki nagłówkowe, których nie chcemy udostępniać na zewnątrz poza naszą bibliotekę.</li>
+</ul>
+<h2 id="test-testy-jednostowe"><a href="#test-testy-jednostowe" class="headerlink" title="test - testy jednostowe"></a>test - testy jednostowe</h2><p>I na sam koniec został nam katalog z testami jednostkowymi.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// test/ApplicationTest.cpp</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;gtest/gtest.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;Application.hpp&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="built_in">TEST</span>(ApplicationTest, Test)</span><br><span class="line">&#123;</span><br><span class="line">    Application app;</span><br><span class="line">    <span class="built_in">EXPECT_TRUE</span>(app.<span class="built_in">start</span>());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>To jest prosty test, który sprawdza, czy powiodło się uruchomienie naszej aplikacji. </p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># test/CMakeLists.txt</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">set</span>(LIB <span class="variable">$&#123;PROJECT_NAME&#125;</span>-lib)</span><br><span class="line"><span class="keyword">set</span>(<span class="keyword">TEST</span> <span class="variable">$&#123;PROJECT_NAME&#125;</span>-tests)</span><br><span class="line"></span><br><span class="line"><span class="keyword">enable_testing</span>()                    <span class="comment">#1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">add_executable</span>(<span class="variable">$&#123;TEST&#125;</span>              <span class="comment">#2</span></span><br><span class="line">    ApplicationTest.cpp</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">target_link_libraries</span>(<span class="variable">$&#123;TEST&#125;</span>       <span class="comment">#3</span></span><br><span class="line">    <span class="variable">$&#123;LIB&#125;</span></span><br><span class="line">    GTest::gtest_main</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">#4</span></span><br><span class="line"><span class="keyword">include</span>(GoogleTest)</span><br><span class="line">gtest_discover_tests(<span class="variable">$&#123;TEST&#125;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>To nasz plik cmake’, w którym dodajemy testy jednostkowe:</p>
+<ul>
+<li><code>#1</code> - włączenie testów dla bieżącego katalogu,</li>
+<li><code>#2</code> - dodanie pliku wykonywalnego naszego testu,</li>
+<li><code>#3</code> - podlinkowanie naszej biblioteki i Google Test,</li>
+<li><code>#4</code> - umożliwienie Google Test odkrycie testów zawartych w pliku wykonywalnym (<a target="_blank" rel="noopener" href="https://google.github.io/googletest/quickstart-cmake.html#create-and-run-a-binary">dokumentacje Google Test</a>).</li>
+</ul>
+<h1 id="Podsumowanie"><a href="#Podsumowanie" class="headerlink" title="Podsumowanie"></a>Podsumowanie</h1><p>W tym poście przedstawiłem jak skonfigurować prosty projekt w C++, z biblioteką współdzieloną i testami jednostkowymi przy użyciu cmake’a.<br>W wyjaśnieniach skupiłem się właśnie na komendach cmake, ponieważ to on jako narzedzoe dp budowania umożliwia nam skonfigurowanie projektu.</p>
+<p>I co myślicie o tym wpisie? :)<br>Dajcie znać w komentarzach.</p>
+<p>Pozdrawiam,<br>Sidewinder22</p>
+<h2 id="Linki"><a href="#Linki" class="headerlink" title="Linki"></a>Linki</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://cmake.org/cmake/help/v3.22/manual/cmake-commands.7.html">Dokumentacja cmake</a></li>
+<li><a target="_blank" rel="noopener" href="https://google.github.io/googletest/quickstart-cmake.html">Dokumencja gtest</a></li>
+</ul>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+    <hr />
+    <h3>Komentarze:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/Sidewinder22" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/damian-st%C4%99pie%C5%84-29717a1b9/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="mailto:sidewinder22@protonmail.com" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2024 Sidewinder22<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'sidewinder22-github-io';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+</body>
+
+</html>
