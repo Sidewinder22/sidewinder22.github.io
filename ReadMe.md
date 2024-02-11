@@ -9,7 +9,6 @@ hexo generate
 
 hexo server
 ```
-
 ### Add new draft
 ```bash
 hexo new draft "My New Draft"
@@ -17,7 +16,19 @@ hexo new draft "My New Draft"
 
 ### Display drafts
 ```bash
-hexo --draft
+hexo clean
+hexo generate --watch
+
+hexo server --draft (in an another console)
+```
+
+### Publish draft
+
+When your post is ready to be a "live" post, use belowe command:
+
+```bash
+hexo publish Your-draft-name
+hexo generate
 ```
 
 ### Add new post
