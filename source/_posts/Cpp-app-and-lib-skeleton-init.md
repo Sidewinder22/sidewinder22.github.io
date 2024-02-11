@@ -1,5 +1,5 @@
 ---
-title: Inicjalizacja projektu w C++ (cmake/*.so/gtest)
+title: Struktura projektu C++ (cmake / shared library / gtest)
 tags:
   - C++
   - CMake
