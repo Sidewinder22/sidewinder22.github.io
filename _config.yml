@@ -4,7 +4,7 @@
 
 # Site
 title: Blog
-subtitle: C++, IO & Linux Developer Blog
+subtitle: C++/Rust/Linux Developer
 description: Sidewinder22 personal blog
 keywords:
 author: Sidewinder22
@@ -100,6 +100,7 @@ ignore:
 #theme: landscape
 #theme:  Harbor
 theme: clean-blog
+# theme: personal-clean-blog
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
