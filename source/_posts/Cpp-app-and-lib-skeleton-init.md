@@ -244,7 +244,7 @@ To nasz plik cmake', w którym dodajemy testy jednostkowe:
 # Podsumowanie
 
 W tym poście przedstawiłem jak skonfigurować prosty projekt w C++, z biblioteką współdzieloną i testami jednostkowymi przy użyciu cmake'a.  
-W wyjaśnieniach skupiłem się właśnie na komendach cmake, ponieważ to on jako narzedzoe dp budowania umożliwia nam skonfigurowanie projektu.
+W wyjaśnieniach skupiłem się właśnie na komendach cmake, ponieważ to one umożliwiają nam skonfigurowanie projektu.
 
 I co myślicie o tym wpisie? :)  
 Dajcie znać w komentarzach.
